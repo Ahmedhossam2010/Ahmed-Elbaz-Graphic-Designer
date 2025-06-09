@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Elbaz | Graphic Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+      color: #212529;
+    }
+    header {
+      background-color: hwb(216 17% 0%);
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .btn {
+      background: #fff;
+      color: hwb(216 17% 0%);
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      margin-top: 20px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .btn:hover {
+      background: hwb(216 17% 0%);
+      color: #fff;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: hwb(216 17% 0%);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .service {
+      background: #fff;
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form button {
+      padding: 10px;
+      background: hwb(216 17% 0%);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: hwb(216 17% 0%);
+    }
+    .social {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .social a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: hwb(216 17% 0%);
+      transition: color 0.3s;
+    }
+    .social a:hover {
+      color: #212529;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #212529;
+      color: #ccc;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="me 555.jpg" alt="">
+    <h1>Ahmed Elbaz</h1>
+    <p>Creative Graphic Designer</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </header>
+
+  <section id="portfolio">
+    <h2>My Work</h2>
+    <div class="gallery">
+      <img src="denmo logo-Recovered 1.jpg" alt="Project 1">
+      <img src="NDA.jpg" alt="Project 2">
+      <img src="3.jpg" alt="Project 3">
+      <img src="p2.jpg" alt="Project 4">
+      <img src="99999.jpg" alt="Project 5">
+      <img src="Yellow Black Creative Modern Fried Chicken Promotion Banner.png" alt="Project 6">
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services-container">
+      <div class="service">
+        <h3>Logo Design</h3>
+        <p>Unique and professional logos that represent your brand perfectly.</p>
+      </div>
+      <div class="service">
+        <h3>Branding Package</h3>
+        <p>Complete branding kit with logos, colors, and brand guides.</p>
+      </div>
+      <div class="service">
+        <h3>Social Media Content</h3>
+        <p>Custom designs optimized for Instagram, Facebook, and more.</p>
+      </div>
+      <div class="service">
+        <h3>Print Materials</h3>
+        <p>Posters, brochures, business cards, and print-ready graphics.</p>
+      </div>
+      <div class="service">
+        <h3>Web Graphics</h3>
+        <p>Graphics for websites including banners and UI elements.</p>
+      </div>
+      <div class="service">
+        <h3>Packaging Design</h3>
+        <p>Creative and professional packaging design for your products.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <div class="social">
+    <a href="https://www.facebook.com/ahmed.elbaz.839857" target="_blank">🔵</a>
+    <a href="https://www.instagram.com/ae_25910/" target="_blank">📸</a>
+    <a href="https://x.com/ae_25910" target="_blank">🐦</a>
+    <a href="https://www.linkedin.com/in/ahmed-hossam-1ab477311/" target="_blank">🔗</a>
+    <a href="ahmedhossamea12@gmail.com">✉️</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Ahmed Elbaz. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      if (name && email && message) {
+        document.getElementById("formMessage").textContent = "Thank you for contacting me, " + name + "! I'll get back to you soon.";
+        document.getElementById("formMessage").style.color = "green";
+        document.getElementById("contactForm").reset();
+      } else {
+        document.getElementById("formMessage").textContent = "Please fill in all fields.";
+        document.getElementById("formMessage").style.color = "red";
+      }
+    });
+  </script>
+</body>
+</html>
